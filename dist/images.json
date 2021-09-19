@@ -1,0 +1,35 @@
+[
+    {
+        "category": "unsorted",
+        "images": [
+            "ball.jpg",
+            "banana.jpg",
+            "yoda.jpg"
+        ]
+    },
+
+    {
+        "category": "animals",
+        "images": [
+            "elephant.png",
+            "hear.png",
+            "kitten.png",
+            "lion.png",
+            "monkey.png",
+            "panda.png",
+            "puppy.png",
+            "turtle.png",
+            "wolf.png"
+        ]
+    },
+
+    {
+        "category": "fruits",
+        "images": [
+            "banana.png",
+            "grape.png",
+            "kiwi.png",
+            "lime.png"
+        ]
+    }
+]
