@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Projects/test-task/static/css/main.3579d1e9.chunk.css",
+    "main.js": "/Projects/test-task/static/js/main.0b2bebbd.chunk.js",
+    "main.js.map": "/Projects/test-task/static/js/main.0b2bebbd.chunk.js.map",
+    "runtime-main.js": "/Projects/test-task/static/js/runtime-main.39d756a7.js",
+    "runtime-main.js.map": "/Projects/test-task/static/js/runtime-main.39d756a7.js.map",
+    "static/js/2.29982955.chunk.js": "/Projects/test-task/static/js/2.29982955.chunk.js",
+    "static/js/2.29982955.chunk.js.map": "/Projects/test-task/static/js/2.29982955.chunk.js.map",
+    "index.html": "/Projects/test-task/index.html",
+    "static/css/main.3579d1e9.chunk.css.map": "/Projects/test-task/static/css/main.3579d1e9.chunk.css.map",
+    "static/js/2.29982955.chunk.js.LICENSE.txt": "/Projects/test-task/static/js/2.29982955.chunk.js.LICENSE.txt",
+    "static/media/UserListPage.scss": "/Projects/test-task/static/media/Inter-VariableFont_slnt,wght.b4c30855.ttf",
+    "static/media/Login.scss": "/Projects/test-task/static/media/user.228e5307.svg",
+    "static/media/logo.3961d249.svg": "/Projects/test-task/static/media/logo.3961d249.svg",
+    "static/media/logout.4012c263.svg": "/Projects/test-task/static/media/logout.4012c263.svg",
+    "static/media/ok.2d794934.svg": "/Projects/test-task/static/media/ok.2d794934.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.39d756a7.js",
+    "static/js/2.29982955.chunk.js",
+    "static/css/main.3579d1e9.chunk.css",
+    "static/js/main.0b2bebbd.chunk.js"
+  ]
+}
