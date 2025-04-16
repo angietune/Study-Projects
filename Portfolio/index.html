@@ -2,84 +2,122 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>angietune's projects</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>angietune — UI/UX Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 18px;
+      color: #333;
+      background: #fdfdfd;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #008891;
+      margin-bottom: 10px;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .project {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 40px;
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    h2 {
+      font-size: 22px;
+      color: #005661;
+    }
+
+    a {
+      color: #008891;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #00b8b8;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    .tags {
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <h1 class="title">angietune's projects 2021</h1>
-        <hr>
-    </header>
-    <main>
-        <figure class="project">
-            <img src="images/poker-preview.jpg" alt="poker-task">
-            <div>
-                <h2 class="subtitle">Planing Poker team task</h2>
-                <hr>
-                <h3><a href="https://scrum-planning-poker.netlify.app">Link to application ></a></h3>
-                <h5>Description</h5>
-                <p>Web-application (SPA). Planing tool for developers team. Can be used to estimate time and resources
-                    for any kind of team tasks</p>
-                <h3><a href="https://github.com/angietune/pointing-poker/tree/develop">Link to code ></a></h3>
-                <h5>Technologies</h5>
-                <p>HTML5, Sass, React, Redux-toolkit, Typescript, Webpack, Eslint/Prettier, Socket.io, Express, Git,
-                    Trello</p>
-            </div>
-        </figure>
-        <figure class="project">
-            <img src="images/christmas-preview.jpg" alt="christmas-task">
-            <div>
-                <h2 class="subtitle">Christmas task</h2>
-                <hr>
-                <h3><a href="https://heuristic-goldwasser-30b09b.netlify.app">Link to application ></a></h3>
-                <h5>Description</h5>
-                <p>Web-application (SPA). Christmas game, where you can filter and choose Christmas toys and drag them
-                    to the tree after. Some functions implementation still in progress</p>
-                <h3><a href="https://github.com/angietune/christmas-task">Link to code ></a></h3>
-                <h5>Technologies</h5>
-                <p>HTML5, Sass, React, React-router v6, Typescript, Webpack, Eslint/Prettier, noUiSlider, React DnD</p>
-            </div>
-        </figure>
-        <figure class="project">
-            <img src="images/art-quiz-preview.jpg" alt="art-quiz-task">
-            <div>
-                <h2 class="subtitle">Art-quiz task</h2>
-                <hr>
-                <h3><a href="https://rolling-scopes-school.github.io/angietune-JSFE2021Q3/art-quiz/">Link to application
-                        ></a></h3>
-                <h5>Description</h5>
-                <p>Web-application (SPA). Art game, where you can try to guess an artist by painting or a painting by
-                    artist. You can setup timer and sound effects. Results saved to LocalStorage. Works best in Google
-                    Chrome</p>
-                <h3><a href="https://github.com/angietune/art-quiz">Link to code ></a></h3>
-                <h5>Technologies</h5>
-                <p>HTML5, Sass, Javascript (ES6 classes), Webpack, Eslint/Prettier</p>
-            </div>
-        </figure>
-        <figure class="project">
-            <img src="images/momentum-preview.jpg" alt="momentum-task">
-            <div>
-                <h2 class="subtitle">Momentum task</h2>
-                <hr>
-                <h3><a href="https://rolling-scopes-school.github.io/angietune-JSFE2021Q3/momentum/">Link to application
-                        ></a></h3>
-                <h5>Description</h5>
-                <p>Web-application (SPA). Simulation of Google Chrome extension. Used weather API (can choose any city),
-                    HTML5 audio, images API (Unsplash). Images theme depends on time of day. You can add your name to
-                    greeting and you can swap the quotes
-                    from json file.
-                    Settings and ToDo list not implemented yet</p>
-                <h3><a href="https://github.com/angietune/momentum-task/tree/main/momentum">Link to code ></a></h3>
-                <h5>Technologies</h5>
-                <p>HTML5, Sass, Javascript (functional programming), Webpack, Eslint/Prettier</p>
-            </div>
-        </figure>
-    </main>
-    <footer></footer>
+  <header>
+    <h1>Проекты angietune</h1>
+    <p style="color: #666; font-size: 16px">UI/UX • Frontend • 2021+</p>
+  </header>
+
+  <main>
+    <section class="project">
+      <img src="images/poker-preview.jpg" alt="Planning Poker Screenshot">
+      <h2>Planning Poker (Team Task)</h2>
+      <p>SPA-приложение для оценки задач в команде разработчиков. Подходит для Scrum-процессов и других форматов совместной работы.</p>
+      <p class="tags">React, Redux Toolkit, TypeScript, Socket.io, Express</p>
+      <p><a href="https://scrum-planning-poker.netlify.app" target="_blank">Смотреть проект</a> • <a href="https://github.com/angietune/pointing-poker/tree/develop" target="_blank">Исходный код</a></p>
+    </section>
+
+    <section class="project">
+      <img src="images/christmas-preview.jpg" alt="Christmas Game Screenshot">
+      <h2>Christmas Game</h2>
+      <p>Игровое SPA с фильтрацией и перетаскиванием игрушек на ёлку. Часть функционала в процессе доработки.</p>
+      <p class="tags">React, React Router, TypeScript, React DnD</p>
+      <p><a href="https://heuristic-goldwasser-30b09b.netlify.app" target="_blank">Смотреть проект</a> • <a href="https://github.com/angietune/christmas-task" target="_blank">Исходный код</a></p>
+    </section>
+
+    <section class="project">
+      <img src="images/art-quiz-preview.jpg" alt="Art Quiz Screenshot">
+      <h2>Art Quiz</h2>
+      <p>Интерактивная игра по искусству: угадай автора по картине или наоборот. Есть таймер и локальное сохранение результатов.</p>
+      <p class="tags">JavaScript, Webpack, LocalStorage</p>
+      <p><a href="https://rolling-scopes-school.github.io/angietune-JSFE2021Q3/art-quiz/" target="_blank">Смотреть проект</a> • <a href="https://github.com/angietune/art-quiz" target="_blank">Исходный код</a></p>
+    </section>
+
+    <section class="project">
+      <img src="images/momentum-preview.jpg" alt="Momentum Clone Screenshot">
+      <h2>Momentum Clone</h2>
+      <p>SPA-симуляция расширения Chrome Momentum: API погоды, изображений, часы, приветствие, цитаты. Поддержка темы по времени суток.</p>
+      <p class="tags">JavaScript, Unsplash API, HTML5 Audio</p>
+      <p><a href="https://rolling-scopes-school.github.io/angietune-JSFE2021Q3/momentum/" target="_blank">Смотреть проект</a> • <a href="https://github.com/angietune/momentum-task/tree/main/momentum" target="_blank">Исходный код</a></p>
+    </section>
+  </main>
 </body>
 
 </html>
